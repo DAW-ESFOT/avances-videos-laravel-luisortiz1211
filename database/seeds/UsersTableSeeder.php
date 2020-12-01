@@ -37,5 +37,7 @@ class UsersTableSeeder extends Seeder
                 'password' => $password,
             ]);
         }
+
+
     }
 }
