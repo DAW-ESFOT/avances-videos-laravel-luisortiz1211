@@ -24,7 +24,7 @@ class Article extends JsonResource
             'updated_at' => $this->updated_at,
             'user'=> "/api/users".$this->user_id,
              //'category'=>Category::find($this->category_id)
-            'category'=> "/api/users".$this->category_id,
+            'category'=> "/api/categories/".$this->category_id,
 
         ];
     }

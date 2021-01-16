@@ -2,12 +2,12 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\ResourceCollection;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class Comment extends ResourceCollection
+class Comment extends JsonResource
 {
     /**
-     * Transform the resource collection into an array.
+     * Transform the resource into an array.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
@@ -22,6 +22,6 @@ class Comment extends ResourceCollection
             'created_at' => $this->created_at,
             'updated_at' => $this->created_at,
 
-            ];
+        ];
     }
 }
