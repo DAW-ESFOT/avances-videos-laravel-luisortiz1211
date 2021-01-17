@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class Article extends Model
 {
-    protected $fillable = ['title', 'body','category_id'];
+    protected $fillable = ['title', 'body','category_id','image'];
     //fillable campos que puedes editador a traves de la base de datos
     public static function boot()
     {
